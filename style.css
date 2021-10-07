@@ -42,24 +42,44 @@ nav {
     padding-bottom: 50px;
     padding-top: 25px;
     color: white;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     position: center;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 25px;
-  background-color: #3a3a3a;
-  color: #444;
-  grid-template-rows:    repeat(1, 100px);
+.element-title{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: center;
+}
+
+.wrapper-games {
+    padding-right: 50px;
+    padding-left: 50px;
+    display: grid;
+    grid-gap: 50px;
+    background-color: #3a3a3a;
+    color: #444;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper-projects {
+    padding-right: 50px;
+    padding-left: 50px;
+    display: grid;
+    grid-gap: 50px;
+    background-color: #3a3a3a;
+    color: #444;
+    grid-template-rows: repeat(2, 300px);
     grid-template-columns: repeat(3, 1fr);
 }
 
 .box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+    padding: 20px;
+    font-size: 150%;
 }
