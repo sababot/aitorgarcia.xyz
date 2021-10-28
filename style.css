@@ -4,14 +4,15 @@
     font-family: monospace;
 }
 body {
-    background-color: #3a3a3a;
+    background-color: grey;
 }
 header {
     height: 75px;
-    background: #3f3f3f;
+    background: #fc9b5a;
     width: 100%;
     position: middle;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .box-area{
     position: middle;
@@ -59,7 +60,7 @@ nav {
     padding-left: 50px;
     display: grid;
     grid-gap: 50px;
-    background-color: #3a3a3a;
+    background-color: grey;
     color: #444;
     grid-template-rows: repeat(1, 300px);
     grid-template-columns: repeat(3, 1fr);
@@ -70,16 +71,17 @@ nav {
     padding-left: 50px;
     display: grid;
     grid-gap: 50px;
-    background-color: #3a3a3a;
+    background-color: grey;
     color: #444;
     grid-template-rows: repeat(2, 300px);
     grid-template-columns: repeat(3, 1fr);
 }
 
 .box {
-    background-color: transparent;
+    background-color: #fc9b5a;
     color: #fff;
-    border-radius: 0px;
+    border-radius: 10px;
     padding: 20px;
     font-size: 150%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
