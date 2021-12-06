@@ -1,8 +1,5 @@
-# sabaproject
-website portfolio for sababot projects and work
+# aitorgh
+Website portfolio for Aitor Garcia Hombrados's projects and work. Just a simple website which acts as a sort of recreation of my github profile but in a custom way and which looks nicer I hope. :)
 
-# dependencies
-- flask
-- python
-
-feel free to use this as a template for your own website
+# Website
+https://sababot.github.io/aitorgh/projects.html
