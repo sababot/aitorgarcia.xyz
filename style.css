@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+body {
+    background-color: black;
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+header {
+    height: 50px;
+    background: transparent;
+    width: 100%;
+    position: middle;
+    text-align: center;
+    
+}
+.box-area{
+    position: middle;
+    text-align: center;
+}
+.middle-logo {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 0 10px;
+    color: #8205ff;
+}
+nav {
+    float: middle;
+    line-height: 65px;
+}
+.header-elements {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 0 10px;
+    color: black;
+    position: middle;
+}
+.heading{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    position: center;
+}
+
+.element-title{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: center;
+}
+
+.wrapper-games {
+    padding-right: 50px;
+    padding-left: 50px;
+    display: grid;
+    grid-gap: 50px;
+    background-color: grey;
+    color: #444;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper-projects {
+    padding-right: 50px;
+    padding-left: 50px;
+    display: grid;
+    grid-gap: 50px;
+    background-color: grey;
+    color: #444;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+    background-color: #fc9b5a;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 150%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
