@@ -2,89 +2,298 @@
     margin: 0;
     padding: 0;
     font-family: monospace;
+    text-shadow:0 0 20px rgba(84,7,249,1);
 }
 body {
-    background-color: black;
+    background-color: #0f0f0f;
+    overflow-x: hidden;
 }
-.example::-webkit-scrollbar {
-  display: none;
+
+.wrapper {
+    display: flex;
+    float: right;
 }
-header {
-    height: 50px;
-    background: transparent;
-    width: 100%;
-    position: middle;
-    text-align: center;
-    
+
+.wrapper .button{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  float: none;
+  margin: 0 5px;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 0px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
 }
+
+.wrapper .button .icon{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 30px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 30px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
+
+#container {
+    -webkit-perspective: 1000;
+            perspective: 1000;
+}
+#slideContainer {
+    width: 400%; /* to contain 4 panels, each with 100% of window width */
+    height: 100%;
+}
+.panel {
+    height: 100%;
+    width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left;
+}
+
+.journey-slider {
+  width: 88%; /* Width of the outside container */
+  padding-left: 6%;
+  position: relative;
+  padding-bottom: 40vh;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 0.5vh; /* Specified height */
+  background: #9c07f9; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1.75vh; /* Set a specific slider handle width */
+  height: 0.75vh; /* Slider handle height */
+  background: #9c07f9; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 100%;
+  box-shadow:0 0 15px rgba(156,7,249,1);
+}
+
+.header-target {
+    position: fixed;
+}
+
+.header {
+  background-color: transparent;
+  padding: 1.5vw 1vh;
+  position: relative;
+  transition: all 0s;
+  padding-bottom: 5vh;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #9c07f9;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 1vh;
+  text-decoration: none;
+  font-size: 1.25vw;
+  line-height: 0.5vh;
+  border-radius: 1px;
+  transition: all .5s;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header-right a.logo {
+  font-size: 1.75vw;
+  font-weight: bold;
+  color: #9c07f9;
+}
+
+/* Change the background color on mouse-over */
+.header-right a:hover {
+  color: white;
+}
+
+/* Style the active/current link*/
+.header-right a.active {
+
+  color: white;
+}
+
+.header-right a.active:hover {
+    color: dimgray;
+}
+
+.header .button div {
+  float: left;
+  color: #9c07f9;
+  text-align: center;
+  font-size: 1.75vw;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 1vw;
+  line-height: 0.5vh;
+  border-radius: 1px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
 .box-area{
     position: middle;
     text-align: center;
 }
-.middle-logo {
-    text-decoration: none;
-    font-family: monospace;
-    font-size: 25px;
-    margin: 0 10px;
-    color: #8205ff;
+
+.work-sections {
+    padding-left: 12.5%;
+    padding-top: 10vh;
+    width: 100%;
 }
-nav {
-    float: middle;
-    line-height: 65px;
-}
-.header-elements {
-    text-decoration: none;
-    font-family: monospace;
-    font-size: 25px;
-    margin: 0 10px;
-    color: black;
-    position: middle;
-}
-.heading{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-top: 25px;
-    color: white;
-    font-size: 35px;
+
+.work-sections button {
+    vertical-align: middle;
+    display: inline-block;
+    width: 25%;
+    color: #9c07f9;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    font-size: 4vh;
     text-align: center;
-    position: center;
+    text-decoration: none;
+    background-color: transparent;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: thick solid;
+    border-collapse: separate;
+    border-spacing: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.work-sections .active {
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: none;
+    border-collapse: separate;
+    border-spacing: 0px;
 }
 
 .element-title{
-    color: white;
-    font-size: 20px;
+    color: #9c07f9;
+    font-size: 1vw;
     text-align: center;
     position: center;
 }
 
-.wrapper-games {
-    padding-right: 50px;
-    padding-left: 50px;
+
+.small-projects-container {
+    padding-right: 3.5vw;
+    padding-left: 3.5vw;
     display: grid;
-    grid-gap: 50px;
-    background-color: grey;
+    grid-column: auto;
+    grid-gap: 4vw;
+    background-color: #0f0f0f;
     color: #444;
-    grid-template-rows: repeat(1, 300px);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.wrapper-projects {
-    padding-right: 50px;
-    padding-left: 50px;
+.big-projects-container {
+    padding-right: 3.5vw;
+    padding-left: 3.5vw;
     display: grid;
-    grid-gap: 50px;
-    background-color: grey;
+    grid-column: auto;
+    grid-gap: 4vw;
+    background-color: #0f0f0f;
     color: #444;
-    grid-template-rows: repeat(2, 300px);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.games-container {
+    padding-right: 3.5vw;
+    padding-left: 3.5vw;
+    display: grid;
+    grid-column: auto;
+    grid-gap: 4vw;
+    background-color: #0f0f0f;
+    color: #444;
+    grid-template-rows: repeat(2, 40%);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .box {
-    background-color: #fc9b5a;
+    background-color: transparent;
     color: #fff;
-    border-radius: 10px;
-    padding: 20px;
+    padding: 1vw;
     font-size: 150%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box img {
+    margin: 10px auto 20px; 
+    display: block; 
+    border: solid; 
+    border-color: #9c07f9; 
+    width: 15vw; 
+    height: 9vw;
 }
