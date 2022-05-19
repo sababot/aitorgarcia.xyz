@@ -314,3 +314,46 @@ body {
     font-size: 1.5vw;
     color: #757575;
 }
+
+.recent-sections {
+    margin-left: -15%;
+    padding-top: 2vw;
+    padding-bottom: 2.5vw;
+    display: grid;
+    grid-gap: 1vw;
+    background-color: transparent;
+    color: #444;
+    grid-template-rows: repeat(2, 12.4vw);
+    grid-template-columns: repeat(3, 18.4vw);
+    z-index: 10;
+}
+
+.recent-sections a {
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px;
+    font-size: 1.5vw;
+    justify-content: center;
+    background-color: rgba(33, 33, 33, 0.25);
+    align-content: center;
+}
+
+.recent-sections a:hover {
+    text-decoration: none;
+    color: #fff;
+    padding: 0px;
+}
+
+.recent-sections .project-img {
+    height: 12vw;
+    border: solid;
+    border-color: rgba(84, 7, 249, 1);
+    border-width: 0.25vw;
+    opacity: 0.5;
+    transition: opacity 0.1s;
+}
+
+.recent-sections .project-img:hover {
+    opacity: 1;
+}
