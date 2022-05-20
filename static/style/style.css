@@ -326,6 +326,7 @@ body {
     grid-template-rows: repeat(2, 12.4vw);
     grid-template-columns: repeat(3, 18.4vw);
     z-index: 10;
+    padding-bottom: 30vh;
 }
 
 .recent-sections a {
@@ -356,4 +357,23 @@ body {
 
 .recent-sections .project-img:hover {
     opacity: 1;
+}
+
+.contact {
+    margin-left: 15%;
+    margin-bottom: 30vh;
+    width: 115%;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact i {
+    margin-left: 5vw;
+    font-size: 7.5vw;
+}
+
+.contact i:hover {
+    color: #757575;
 }
