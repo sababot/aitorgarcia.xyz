@@ -57,6 +57,28 @@ class TextScramble {
 }
 
 // ——————————————————————————————————————————————————
+// NAME
+// ——————————————————————————————————————————————————
+
+const name = [
+  'aitor garcia',
+  'aitor garcia'
+]
+
+const eln = document.querySelector('#name')
+const fxn = new TextScramble(eln)
+
+let countern = 0
+const nextn = () => {
+  fxn.setText(name[countern]).then(() => {
+    setTimeout(nextn, 2000)
+  })
+  countern = (countern + 1) % name.length
+}
+
+nextn()
+
+// ——————————————————————————————————————————————————
 // INTRO
 // ——————————————————————————————————————————————————
 
@@ -104,23 +126,73 @@ const nexta = () => {
 nexta()
 
 // ——————————————————————————————————————————————————
-// NAME
+// SKILLS
 // ——————————————————————————————————————————————————
 
-const name = [
-  'aitor garcia',
-  'aitor garcia'
+const skills = [
+  'skills',
+  'skills',
+  'skills',
+  'skills'
 ]
 
-const eln = document.querySelector('#name')
-const fxn = new TextScramble(eln)
+const els = document.querySelector('#skills')
+const fxs = new TextScramble(els)
 
-let countern = 0
-const nextn = () => {
-  fxn.setText(name[countern]).then(() => {
-    setTimeout(nextn, 2000)
+let counters = 0
+const nexts = () => {
+  fxs.setText(skills[counters]).then(() => {
+    setTimeout(nexts, 2000)
   })
-  countern = (countern + 1) % name.length
+  counters = (counters + 1) % skills.length
 }
 
-nextn()
+nexts()
+
+// ——————————————————————————————————————————————————
+// RECENT
+// ——————————————————————————————————————————————————
+
+const recent = [
+  'recent',
+  'recent',
+  'recent',
+  'recent'
+]
+
+const elr = document.querySelector('#recent')
+const fxr = new TextScramble(elr)
+
+let counterr = 0
+const nextr = () => {
+  fxr.setText(recent[counterr]).then(() => {
+    setTimeout(nextr, 2000)
+  })
+  counterr = (counterr + 1) % recent.length
+}
+
+nextr()
+
+// ——————————————————————————————————————————————————
+// CONTACT
+// ——————————————————————————————————————————————————
+
+const contact = [
+  'contact',
+  'contact',
+  'contact',
+  'contact'
+]
+
+const elc = document.querySelector('#contact')
+const fxc = new TextScramble(elc)
+
+let counterc = 0
+const nextc = () => {
+  fxc.setText(contact[counterc]).then(() => {
+    setTimeout(nextc, 2000)
+  })
+  counterc = (counterc + 1) % contact.length
+}
+
+nextc()

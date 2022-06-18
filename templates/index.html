@@ -4,6 +4,12 @@
 	<title>aitor garcia</title>
 	<link rel="stylesheet" type="text/css" href="../static/style/style.css">
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.velocity.min.js"></script>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
@@ -14,7 +20,7 @@
 	<div class="header">
 		<p class="logo"></p>
 		<div class="wrapper-sections" id="header_elements">
-			<a href="home" class="active">
+			<a href="" class="active">
 				<div class="box">
 				  	<p class="box-title">home</p>
 				</div>
@@ -29,7 +35,7 @@
 				  	<p class="box-title">blog</p>
 				</div>
 			</a>
-			<a href="blog">
+			<a href="resume">
 				<div class="box">
 				  	<p class="box-title">resume</p>
 				</div>
@@ -38,11 +44,21 @@
 	</div>
 
 	<div class="socials">
-		<i class="fa-brands fa-github"></i><br>
-		<i class="fa-brands fa-twitter"></i><br>
-		<i class="fa-brands fa-instagram"></i><br>
-		<i class="fa-brands fa-mastodon"></i><br>
-		<i class="fa-brands fa-linkedin"></i><br>
+		<a href="https://github.com/sababot" target="_blank">
+			<i class="fa-brands fa-github"></i>
+		</a><br>
+		<a href="https://twitter.com/aitorgarciacpp" target="_blank">
+			<i class="fa-brands fa-twitter"></i>
+		</a><br>
+		<a href="">
+			<i class="fa-brands fa-instagram"></i>
+		</a><br>
+		<a href="https://www.linkedin.com/in/aitor-garcia-hombrados-2a0a01235/" target="_blank">
+			<i class="fa-brands fa-linkedin"></i>
+		</a><br>
+		<a href="https://mastodon.social/web/@sababot" target="_blank">
+			<i class="fa-brands fa-mastodon"></i>
+		</a><br>
 		<div class="vert-line"></div>
 	</div>
 
@@ -55,10 +71,10 @@
 	<div class="welcome">
   		<div class="text"></div>
 	</div>
-	<p class="scrolldown">scroll down to find out</p>
+	<p class="scrolldown" id="scrolldown">scroll down to find out</p>
 
-	<div class="section">
-		<p class="title" id="about">about</p>
+	<div class="section" id="about-section">
+		<p class="title" id="about" style="transform: translate(100%);">about</p>
 		<div class="terminal">
 			<div class="heading">
 				<div class="texts">
@@ -74,20 +90,23 @@
 			</div>
 			<div class="text">
 				<p class="prompt">aitorgarcia@web:~$ </p>
-				<p class="command">about aitor</p>
+				<p class="command"><span style="color: #cccccc;">about aitor</span></p>
 			</div>
 			<div class="output">
 				<div class="option">
-					<p class="type">description:&nbsp</p>
-					<p><span style="color: #cccccc;">aitor</span> loves <span style="color: #cccccc;">computers</span>, specifically <span style="color: #cccccc;">how</span> they work. since he made his <span style="color: #cccccc;">first program</span> in scratch, he would spend <span style="color: #cccccc;">hours</span> making <span style="color: #cccccc;">programs</span> and <span style="color: #cccccc;">experimenting</span> with a large variety of <span style="color: #cccccc;">technologies</span>. by remmaining <span style="color: #cccccc;">humble</span> he keeps <span style="color: #cccccc;">learning</span> from his mistakes and <span style="color: #cccccc;">improves</span> throughout his <span style="color: #cccccc;">computer science journey</span>.<br><br>
+					<p>
+						<br>i am a <span style="color: #cccccc;">computer scientist</span> who is always seeking to <span style="color: #cccccc;">improve</span> by remaining <span style="color: #cccccc;">humble</span>, i also have interest in <span style="color: #cccccc;">maths</span> and <span style="color: #cccccc;">physics</span>.<br><br>
+					</p>
+				</div>
+				<div class="option" id="about-end">
+					<p>
+						<br>even though i have used several <span style="color: #cccccc;">frameworks</span> and <span style="color: #cccccc;">libraries</span>, i enjoy programming projects from <span style="color: #cccccc;">scratch</span> to understand exactly <span style="color: #cccccc;">how</span> they <span style="color: #cccccc;">work</span>.<br><br>
+					</p>
 				</div>
 				<div class="option">
-					<p class="type">interests:&nbsp</p>
-					<p><span style="color: #cccccc;">algorithms</span>, web 3, <span style="color: #cccccc;">ai</span>, blockchain, game development, <span style="color: #cccccc;">software development</span><br><br></p>
-				</div>
-				<div class="option">
-					<p class="type">current state:&nbsp</p>
-					<p>currently, <span style="color: #cccccc;">aitor</span> is a <span style="color: #cccccc;">student</span> and sells <span style="color: #cccccc;">nfts</span>.<br><br></p>
+					<p>
+						<br>i always look to do work which is <span style="color: #cccccc;">independent</span> of other companies or developers and doesn't violate the <span style="color: #cccccc;">users rights</span>. i also strongly believe in sustaining internet users <span style="color: #cccccc;">privacy</span> and in <span style="color: #cccccc;">free open source</span> software.<br><br>
+					</p>
 				</div>
 			</div>
 			<div class="text">
@@ -97,41 +116,41 @@
 		</div>
 	</div>
 
-	<div class="section" style="margin-top: 50vh;">
-		<p class="title" style="margin-left: -15%;">skills</p>
+	<div class="section" style="margin-top: 50vh;" id="about-end-2">
+		<p class="title" style="margin-left: -15%; transform: translate(-100%);" id="skills">skills</p>
 		<div class="skill-sections">
 			<div class="skill-description-holder">
-				<p class="skill-description">as seen in my github, most of my repos are implementations of different algorithms in c++.<br><br>this is followed by artificial intelligence in both c++ and python.<br><br>i have used different graphics apis from opengl to vulkan to pygame to unity.<br><br>lately i've been experimenting with blockchain as well as web development.</p>
+				<p class="skill-description">i mostly learn about different algorithms and make new ones from scratch in c++.<br><br><br>this is followed by artificial intelligence in both c++ and python.<br><br><br>i have used different graphics apis from opengl to vulkan to pygame to unity.<br><br><br>lately i've been experimenting with blockchain as well as web development.</p>
 			</div>
-			<div class="skills">
+			<div class="skills" id="skills-graph">
 				<div class="skill">
 					<p style="margin-top: 0;">algorithms</p>
 					<div class="holder">
-						<div class="level" style="width: 90%;"></div>
+						<div class="level" id="level-algorithms" style="width: 0%;"></div>
 					</div>
 				</div>
 				<div class="skill">
 					<p>artificial intelligence</p>
 					<div class="holder">
-						<div class="level" style="width: 75%;"></div>
+						<div class="level" id="level-ai" style="width: 0%;"></div>
 					</div>
 				</div>
 				<div class="skill">
 					<p>graphics</p>
 					<div class="holder">
-						<div class="level" style="width: 60%;"></div>
+						<div class="level" id="level-graphics" style="width: 0%;"></div>
 					</div>
 				</div>
 				<div class="skill">
 					<p>web</p>
 					<div class="holder">
-						<div class="level" style="width: 55%;"></div>
+						<div class="level" id="level-web" style="width: 0%;"></div>
 					</div>
 				</div>
-				<div class="skill">
+				<div class="skill" id="skills-end">
 					<p>blockchain</p>
 					<div class="holder">
-						<div class="level" style="width: 35%;"></div>
+						<div class="level" id="level-blockchain" style="width: 0%;"></div>
 					</div>
 				</div>
 			</div>
@@ -139,7 +158,7 @@
 	</div>
 
 	<div class="section" style="margin-top: 50vh">
-		<p class="title" style="margin-left: 5%">recent</p>
+		<p class="title" style="margin-left: 5%; transform: translate(100%)" id="recent">recent</p>
 		<div class="recent-sections" id="header_elements">
 			<a href="">
 				<div class="box">
@@ -166,7 +185,7 @@
 				  	<img src="../static/images/projects/mazegeneration.png" class="project-img">
 				</div>
 			</a>
-			<a href="visualize">
+			<a href="visualize" id="recent-end">
 				<div class="box">
 				  	<img src="../static/images/projects/pathfinding.png" class="project-img">
 				</div>
@@ -175,26 +194,33 @@
 	</div>
 
 	<div class="section">
-		<p class="title" style="margin-left: -15%; margin-top: -15%;">contact</p>
+		<p class="title" style="margin-left: -15%; margin-top: -15%; transform: translate(-100%)" id="contact">contact</p>
 		<div class="contact">
-			<a href="">
+			<a href="https://github.com/sababot" target="_blank">
 				<i class="fa-brands fa-github"></i>
 			</a>
-			<a href="">
+			<a href="https://twitter.com/aitorgarciacpp" target="_blank">
 				<i class="fa-brands fa-twitter"></i>
 			</a>
 			<a href="">
 				<i class="fa-brands fa-instagram"></i>
 			</a>
-			<a href="">
-				<i class="fa-brands fa-mastodon"></i>
-			</a>
-			<a href="">
+			<a href="https://www.linkedin.com/in/aitor-garcia-hombrados-2a0a01235/" target="_blank">
 				<i class="fa-brands fa-linkedin"></i>
+			</a>
+			<a href="https://mastodon.social/web/@sababot" target="_blank">
+				<i class="fa-brands fa-mastodon"></i>
 			</a>
 		</div>
 	</div>
 
+	<div class="section">
+		<p class="title" style="margin-left: 7.5%; margin-top: -10%;"></p>
+
+		<p style="font-size: 1vw; color: #757575; margin-top: 1vh; text-align: center; margin-top: 10vh; margin-bottom: 2.5vh;">made with love <3</p>
+	</div>
+
 	<script src="../static/scripts/textscramble.js"></script>
+	<script src="../static/scripts/scrollmagic.js"></script>
 </body>
 </html>
