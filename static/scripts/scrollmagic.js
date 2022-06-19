@@ -1,6 +1,7 @@
 $(function() {
   var controller = new ScrollMagic.Controller();
 
+  // SECTIONS //
   // About
   var scene = new ScrollMagic.Scene({
     triggerElement: "#scrolldown",
@@ -9,7 +10,7 @@ $(function() {
   .setTween("#about", 0.5, {x: 0})
   .addTo(controller);
 
-  // About
+  // Skills
   var scene = new ScrollMagic.Scene({
     triggerElement: "#about-end",
     duration: (jQuery(window).height() * 1)

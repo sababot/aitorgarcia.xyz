@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Cutive Mono', monospace;
-    transition: color 0.25s, transform 0.25s linear, width 0.25s linear;
+    transition: color 0.25s, transform 0.25s ease-out, width 0.25s;
 }
 body {
     background-color: #1d1e22;
@@ -185,7 +185,7 @@ body {
     margin-top: 10vh;
     width: 60vw;
     height: 32.5vw;
-    background-color: rgba(39, 39, 39, 0.35);
+    background-color: rgba(39, 39, 39, 0.5);
     border-radius: 0.5vw;
     box-shadow: 0vw 0vw 1vw #141414;
 }
@@ -207,9 +207,9 @@ body {
 }
 
 .terminal .output .option {
-    color: #757575;
+    color: #b7b7b7;
     margin-left: 0vw;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .terminal .output .option .type {
@@ -228,21 +228,20 @@ body {
 .terminal .text .prompt {
     margin-left: 0.25vw;
     color: #54c94e;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .terminal .text .command {
     margin-left: 0.75vw;
     color: #757575;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .terminal .text .cursor {
     margin-left: 0.75vw;
-    margin-top: 0.2vw;
     background-color: #757575;
-    width: 0.65vw;
-    height: 1.25vw;
+    width: 0.75vw;
+    height: 1.5vw;
     animation: blinker 1s steps(1, end) infinite;
 }
 
@@ -260,7 +259,7 @@ body {
 .terminal .heading .texts .option{
     margin-left: 1vw;
     margin-top: 0.25vw;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     color: grey;
 }
 
@@ -292,7 +291,7 @@ body {
 .skills .skill p{
     margin-top: 2.5vw;
     margin-bottom: 0.5vw;
-    color: #757575;
+    color: #b7b7b7;
     font-size: 1.5vw;
 }
 
@@ -317,13 +316,13 @@ body {
 
 .skill-description-holder .skill-description {
     font-size: 1.5vw;
-    color: #757575;
+    color: #b7b7b7;
 }
 
 .recent-sections {
     margin-left: -15%;
     padding-top: 2vw;
-    padding-bottom: 2.5vw;
+    padding-bottom: 1vw;
     display: grid;
     grid-gap: 1vw;
     background-color: transparent;
@@ -331,7 +330,6 @@ body {
     grid-template-rows: repeat(2, 12.4vw);
     grid-template-columns: repeat(3, 18.4vw);
     z-index: 10;
-    padding-bottom: 30vh;
 }
 
 .recent-sections a {
@@ -364,9 +362,35 @@ body {
     opacity: 1;
 }
 
+.view-all {
+    text-decoration: none;
+    color: #fff;
+    padding: 0px;
+    justify-content: center;
+}
+
+.view-all div:hover {
+    opacity: 1;
+}
+
+.view-all div {
+    border: solid;
+    border-color: rgba(84, 7, 249, 1);
+    border-width: 0.25vw;
+    opacity: 0.5;
+    padding: 0.25vw;
+    margin-left: -15%;
+    margin-right: 59.5vw;
+}
+
+.view-all p {
+    font-size: 1.75vw;
+    color: #b7b7b7;
+}
+
 .contact {
     margin-left: 15%;
-    margin-bottom: 30vh;
+    margin-bottom: 40vh;
     width: 115%;
 }
 
