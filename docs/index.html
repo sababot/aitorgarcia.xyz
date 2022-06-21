@@ -15,9 +15,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
 	<script src="https://kit.fontawesome.com/497ef235da.js" crossorigin="anonymous"></script>
-	<link rel="icon" href="images/icon.png" type="image/x-icon">
 </head>
 <body>
+	<!--BACKGROUND-->
+	<canvas id="canvas" style="position: absolute; z-index: -10;"></canvas>
+	<div style="position: absolute; z-index: -9; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 70%, #1d1e22 100%);"></div>
+
 	<!--HEADER-->
 	<div class="header">
 		<p class="logo"></p>
@@ -238,5 +241,6 @@
 	<!--SCRIPTS-->
 	<script src="scripts/textscramble.js"></script>
 	<script src="scripts/scrollmagic.js"></script>
+	<script src="scripts/code-background.js"></script>
 </body>
 </html>
