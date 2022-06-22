@@ -7,6 +7,14 @@ var c = canvas.getContext('2d');
 window.addEventListener('resize', function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
+    circleArray = [];
+
+    for (var i = 0; i < Math.round(canvas.width / 15); i++) {
+        var choice = Math.round(Math.random() * 3);
+
+        circleArray.push(new Circle(i * 15))
+    }
 })
 
 var characters = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'print', 'json', 'void', 'cout', 'int', 'def', 'json', 'class', 'string', 'print', 'return', 'string', 'int', 'void', 'json', 'let', 'push', 'class', 'int', 'return', 'string', 'cout']

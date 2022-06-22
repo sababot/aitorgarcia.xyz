@@ -15,6 +15,27 @@ body {
     height: 6.5vh;
 }
 
+.header-option-button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 4vw;
+    padding-top: 0.75vw;
+    height: 1.5vw;
+    width: 10vw;
+}
+
+.header-option-text:hover {
+    color: #7c30f4;
+}
+
+.header-option-text {
+    text-align: center;
+    padding-top: 0vw;
+    color: #757575;
+    font-size: 1.5vw;
+}
+
 .logo {
     margin: 1.5vw 0vw 0vw 5vw;
     text-align: center;
@@ -23,7 +44,7 @@ body {
 }
 
 .wrapper-sections {
-    padding-left: 28.5vw;
+    padding-left: 20.5vw;
     position: relative;
     justify-content: center;
     padding-top: 0.5vw;
