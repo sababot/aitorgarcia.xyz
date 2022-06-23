@@ -85,44 +85,207 @@
 
 	<!--SELECT WORK-->
 	<div class="select">
-		<a class="all" href="">
+		<button class="all" id="all" onclick="select_all()">
 			<div class="box">
 				<p class="box-title">all</p>
 			</div>
-		</a>
+		</button>
 
 		<div class="select-sections">
-			<a href="">
+			<button id="projects" onclick="select_projects()">
 				<div class="box">
 				  	<p class="box-title">projects</p>
 				</div>
-			</a>
-			<a href="" class="active">
+			</button>
+			<button id="repositories" onclick="select_repositories()">
 				<div class="box">
 				  	<p class="box-title">repositories</p>
 				</div>
-			</a>
-			<a href="">
+			</button>
+			<button id="games" onclick="select_games()">
 				<div class="box">
 				  	<p class="box-title">games</p>
 				</div>
-			</a>
-			<a href="">
+			</button>
+			<button id="publications" onclick="select_publications()">
 				<div class="box">
 				  	<p class="box-title">publications</p>
 				</div>
-			</a>
+			</button>
 		</div>
 
 		<div class="search-holder">
 			<input type="text" name="" class="search" placeholder="search">
 
-			<a class="search-button" href="">
+			<button class="search-button" id="search" onclick="select_search()">
 				<div class="box">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</div>
-			</a>
+			</button>
 		</div>
+	</div>
+
+	<div class="work-cards">
+		<a href="https://github.com/sababot/linecord" class="card">
+			<div style="flex: 1.25">
+				<p class="title">linecord</p><br>
+				<p class="description">the discord cli client for developers with regular friends who use discord</p><br>
+				<p class="tools">python curses</p>
+			</div>
+			<img src="images/projects/linecord.png" style="flex: 1">
+		</a>
+		<a href="http://meziakifennecs.com" class="card">
+			<div style="flex: 1.25">
+				<p class="title">meziaki fennecs</p><br>
+				<p class="description">an 1809 nft collection on the solana blockchain</p><br>
+				<p class="tools">html css js</p>
+			</div>
+			<img src="images/projects/meziakifennecs.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/neural-network" class="card">
+			<div style="flex: 1.25">
+				<p class="title">neural network</p><br>
+				<p class="description">a simple neural network implemented from scratch in c++</p><br>
+				<p class="tools">c++ eigen</p>
+			</div>
+			<img src="images/projects/neuralnet.png" style="flex: 1">
+		</a>
+		<a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.MountainDismount" class="card">
+			<div style="flex: 1.25">
+				<p class="title">mountain dismount</p><br>
+				<p class="description">launch yourself and deal as much damage as possible</p><br>
+				<p class="tools">unity c#</p>
+			</div>
+			<img src="images/projects/mountaindismount.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/instabrute" class="card">
+			<div style="flex: 1.25">
+				<p class="title">insta brute</p><br>
+				<p class="description">a instagram bruteforce tool using the chrome web-driver</p><br>
+				<p class="tools">python chrome-webdriver</p>
+			</div>
+			<img src="images/projects/instabrute.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/linear-regression" class="card">
+			<div style="flex: 1.25">
+				<p class="title">linear regression</p><br>
+				<p class="description">linear regression using ai from scratch</p><br>
+				<p class="tools">c++</p>
+			</div>
+			<img src="images/projects/linearregression.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/k-nearest-neighbours" class="card">
+			<div style="flex: 1.25">
+				<p class="title">k-nearest neighbours</p><br>
+				<p class="description">simple implementation of k-nearest neighbours from scratch in c++</p><br>
+				<p class="tools">c++</p>
+			</div>
+			<img src="images/projects/knearestneighbours.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/sorting" class="card">
+			<div style="flex: 1.25">
+				<p class="title">sorting</p><br>
+				<p class="description">most famous sorting algorithms implemented in c++ with a visualizer</p><br>
+				<p class="tools">c++</p>
+			</div>
+			<img src="images/projects/sorting2.png" style="flex: 1">
+		</a>
+		<a href="https://play.google.com/store/apps/details?id=com.ApdosStudios.Hazert" class="card">
+			<div style="flex: 1.25">
+				<p class="title">hazert</p><br>
+				<p class="description">collect fuel and ride joyfully through the desert</p><br>
+				<p class="tools">unity c#</p>
+			</div>
+			<img src="images/projects/hazert.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/aitorvulkanengine" class="card">
+			<div style="flex: 1.25">
+				<p class="title">aitor vulkan engine</p><br>
+				<p class="description">a minimalistic vulkan rendering engine for small application</p><br>
+				<p class="tools">vulkan c++ cmake</p>
+			</div>
+			<img src="images/projects/aitorvulkanengine.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/searching" class="card">
+			<div style="flex: 1.25">
+				<p class="title">searching</p><br>
+				<p class="description">most famous searching algorithms implemented in c++ with a visualizer</p><br>
+				<p class="tools">c++</p>
+			</div>
+			<img src="images/projects/searching.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/q-learning" class="card">
+			<div style="flex: 1.25">
+				<p class="title">q-learning</p><br>
+				<p class="description">c++ simple implementation of the machine learning algorithm q-learning</p><br>
+				<p class="tools">c++</p>
+			</div>
+			<img src="images/projects/qlearning.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/pathfinding" class="card">
+			<div style="flex: 1.25">
+				<p class="title">pathfinding</p><br>
+				<p class="description">opengl visualization + c++ implementation of the pathfinding algorithm A*</p><br>
+				<p class="tools">opengl c++</p>
+			</div>
+			<img src="images/projects/pathfinding.png" style="flex: 1">
+		</a>
+		<a href="https://play.google.com/store/apps/details?id=com.ApdosStudios.Hazert" class="card">
+			<div style="flex: 1.25">
+				<p class="title">ready jets</p><br>
+				<p class="description">collect coins, dont die and pass the levels. just survive</p><br>
+				<p class="tools">unity c#</p>
+			</div>
+			<img src="images/projects/readyjets.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/rsa" class="card">
+			<div style="flex: 1.25">
+				<p class="title">rsa</p><br>
+				<p class="description">simple c++ implementation of the RSA asymmetric encryption algorithm</p><br>
+				<p class="tools">c++ boost</p>
+			</div>
+			<img src="images/projects/rsa.png" style="flex: 1">
+		</a>
+		<a href="https://sababot.github.io/2d-drifting/" class="card">
+			<div style="flex: 1.25">
+				<p class="title">2d drifting</p><br>
+				<p class="description">a small infinite drifting game made in one afternoon</p><br>
+				<p class="tools">html css js</p>
+			</div>
+			<img src="images/projects/2ddrifting.png" style="flex: 1">
+		</a>
+		<a href="https://sababot.github.io/ant-simulation/" class="card">
+			<div style="flex: 1.25">
+				<p class="title">ant simulation</p><br>
+				<p class="description">simulating ants and how they find their paths to food</p><br>
+				<p class="tools">html css js</p>
+			</div>
+			<img src="images/projects/antsimulation.png" style="flex: 1">
+		</a>
+		<a href="https://sababot.github.io/hijacked-button/" class="card">
+			<div style="flex: 1.25">
+				<p class="title">hijacked button</p><br>
+				<p class="description">can you click the button? i dont think so</p><br>
+				<p class="tools">html css js</p>
+			</div>
+			<img src="images/projects/hijackedbutton.png" style="flex: 1">
+		</a>
+		<a href="https://github.com/sababot/platformer-controller" class="card">
+			<div style="flex: 1.25">
+				<p class="title">platformer controller</p><br>
+				<p class="description">a simple platformer controller for javascript</p><br>
+				<p class="tools">html css js</p>
+			</div>
+			<img src="images/projects/platformercontroller.png" style="flex: 1">
+		</a>
+		<a href="https://sababot.github.io/maze-generation/" class="card">
+			<div style="flex: 1.25">
+				<p class="title">maze generation</p><br>
+				<p class="description">maze generation visualization using the recursion algorithm</p><br>
+				<p class="tools">html css js</p>
+			</div>
+			<img src="images/projects/mazegeneration.png" style="flex: 1">
+		</a>
 	</div>
 
 	<!--FOOTER-->
@@ -133,8 +296,7 @@
 	</div>
 
 	<!--SCRIPTS-->
-	<script src="scripts/textscramble.js"></script>
-	<script src="scripts/scrollmagic.js"></script>
 	<script src="scripts/settings.js"></script>
+	<script src="scripts/work.js"></script>
 </body>
 </html>

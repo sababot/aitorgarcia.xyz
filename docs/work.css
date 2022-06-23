@@ -8,10 +8,11 @@
     margin-right: 4vw;
     margin-left: 4vw;
 
-    height: 2.2vw;
+    height: 2.5vw;
     width: 4vw;
-    opacity: 0.5;
+    opacity: 0.75;
     text-decoration: none;
+    background-color: transparent;
     color: #fff;
     padding: 0px;
     font-size: 1.5vw;
@@ -27,7 +28,7 @@
 .all .box p {
     text-align: center;
     width: 100%;
-    padding-top: 0.15vw;
+    padding-top: 0vw;
     color: #757575;
     font-size: 100%;
 }
@@ -46,9 +47,10 @@
     z-index: 10;
 }
 
-.select-sections a {
-    opacity: 0.5;
+.select-sections button {
+    opacity: 0.75;
     text-decoration: none;
+    background-color: transparent;
     color: #fff;
     padding: 0px;
     font-size: 1.5vw;
@@ -57,7 +59,7 @@
     border-width: 0.15vw;
 }
 
-.select-sections a:hover {
+.select-sections button:hover {
     opacity: 1;
 
 }
@@ -65,7 +67,6 @@
 .select-sections .box p {
     text-align: center;
     width: 100%;
-    padding-top: 0.15vw;
     color: #757575;
     font-size: 100%;
 }
@@ -80,7 +81,7 @@
 
     height: 2.2vw;
     width: 36vw;
-    opacity: 0.5;
+    opacity: 0.75;
     text-decoration: none;
     color: #fff;
     padding: 0px;
@@ -97,10 +98,11 @@
     margin-top: 0.5vw;
     margin-right: 4vw;
 
-    height: 2.2vw;
-    width: 2.2vw;
-    opacity: 0.5;
+    height: 2.5vw;
+    width: 2.5vw;
+    opacity: 0.75;
     text-decoration: none;
+    background-color: transparent;
     color: #fff;
     padding: 0px;
     font-size: 1.5vw;
@@ -116,4 +118,50 @@
 .search-button i {
     margin: 0.35vw;
     color: #757575;
+}
+
+.select-sections .active {
+    opacity: 1;
+}
+
+.work-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, auto));
+    gap: 1vw;
+    margin-top: 10px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    justify-content: center;
+}
+
+.work-cards .card {
+    opacity: 1;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 7.5px;
+    font-size: 20px;
+    border: solid;
+    border-color: rgba(84, 7, 249, 1);
+    border-width: 2.5px;
+    display: flex;
+}
+
+.work-cards .card img {
+    width: 25%;
+}
+
+.work-cards .card .title {
+    font-size: 22.5px;
+    color: #9e9e9e;
+}
+
+.work-cards .card .description {
+    font-size: 17.5px;
+    color: #9e9e9e;
+}
+
+.work-cards .card .tools {
+    font-size: 15px;
+    color: #9e9e9e;
 }
