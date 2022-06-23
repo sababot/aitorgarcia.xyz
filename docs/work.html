@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aitor garcia</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="work.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.velocity.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/497ef235da.js" crossorigin="anonymous"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/icon.png" type="image/x-icon">
+
+	<script src="https://kit.fontawesome.com/497ef235da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!--BACKGROUND-->
+	<canvas id="canvas" style="position: absolute; z-index: -10;"></canvas>
+	<div style="position: absolute; z-index: -9; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 70%, #1d1e22 100%);"></div>
+
+	<!--HEADER-->
+	<div class="header">
+		<button class="header-option-button" onclick="toggleBackground()">
+			<p class="header-option-text" style="text-align: left;">background</p>
+		</button>
+		<div class="wrapper-sections" id="header_elements">
+			<a href="index.html">
+				<div class="box">
+				  	<p class="box-title">home</p>
+				</div>
+			</a>
+			<a href="" class="active">
+				<div class="box">
+				  	<p class="box-title">work</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="box">
+				  	<p class="box-title">blog</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="box">
+				  	<p class="box-title">resume</p>
+				</div>
+			</a>
+		</div>
+		<button class="header-option-button" style="margin-left: 18.5vw;" onclick="">
+			<p class="header-option-text" style="text-align: right;">theme</p>
+		</button>
+	</div>
+
+	<!--SOCIALS-->
+	<div class="socials">
+		<a href="https://github.com/sababot" target="_blank">
+			<i class="fa-brands fa-github"></i>
+		</a><br>
+		<a href="https://twitter.com/aitorgarciacpp" target="_blank">
+			<i class="fa-brands fa-twitter"></i>
+		</a><br>
+		<a href="">
+			<i class="fa-brands fa-instagram"></i>
+		</a><br>
+		<a href="https://www.linkedin.com/in/aitor-garcia-hombrados-2a0a01235/" target="_blank">
+			<i class="fa-brands fa-linkedin"></i>
+		</a><br>
+		<a href="https://mastodon.social/web/@sababot" target="_blank">
+			<i class="fa-brands fa-mastodon"></i>
+		</a><br>
+		<div class="vert-line"></div>
+	</div>
+
+	<!--EMAIL-->
+	<div class="email">
+		<p>aitor@garciahombrados.com</p><br>
+		<div class="vert-line"></div>
+	</div>
+
+	<!--SELECT WORK-->
+	<div class="select">
+		<a class="all" href="">
+			<div class="box">
+				<p class="box-title">all</p>
+			</div>
+		</a>
+
+		<div class="select-sections">
+			<a href="">
+				<div class="box">
+				  	<p class="box-title">projects</p>
+				</div>
+			</a>
+			<a href="" class="active">
+				<div class="box">
+				  	<p class="box-title">repositories</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="box">
+				  	<p class="box-title">games</p>
+				</div>
+			</a>
+			<a href="">
+				<div class="box">
+				  	<p class="box-title">publications</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="search-holder">
+			<input type="text" name="" class="search" placeholder="search">
+
+			<a class="search-button" href="">
+				<div class="box">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<!--FOOTER-->
+	<div class="section">
+		<p class="title" style="margin-left: 7.5%; margin-top: -10%;"></p>
+
+		<p style="font-size: 1vw; color: #757575; margin-top: 1vh; text-align: center; margin-top: 10vh; margin-bottom: 2.5vh;">© 2022, Aitor Garcia Hombrados</p>
+	</div>
+
+	<!--SCRIPTS-->
+	<script src="scripts/textscramble.js"></script>
+	<script src="scripts/scrollmagic.js"></script>
+	<script src="scripts/settings.js"></script>
+</body>
+</html>

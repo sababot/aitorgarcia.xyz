@@ -1,0 +1,119 @@
+.select {
+    margin-top: 4vw;
+    display: flex;
+}
+
+.all {
+    margin-top: 0.5vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+
+    height: 2.2vw;
+    width: 4vw;
+    opacity: 0.5;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px;
+    font-size: 1.5vw;
+    border: solid;
+    border-color: rgba(84, 7, 249, 1);
+    border-width: 0.15vw;
+}
+
+.all:hover {
+    opacity: 1;
+}
+
+.all .box p {
+    text-align: center;
+    width: 100%;
+    padding-top: 0.15vw;
+    color: #757575;
+    font-size: 100%;
+}
+
+.select-sections {
+    position: relative;
+    justify-content: center;
+    padding-top: 0.5vw;
+    padding-bottom: 2.5vw;
+    display: grid;
+    grid-gap: 0.25vw;
+    background-color: transparent;
+    color: #444;
+    grid-template-rows: repeat(1, 2.5vw);
+    grid-template-columns: 9vw 12.5vw 6vw 12.5vw;
+    z-index: 10;
+}
+
+.select-sections a {
+    opacity: 0.5;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px;
+    font-size: 1.5vw;
+    border: solid;
+    border-color: rgba(84, 7, 249, 1);
+    border-width: 0.15vw;
+}
+
+.select-sections a:hover {
+    opacity: 1;
+
+}
+
+.select-sections .box p {
+    text-align: center;
+    width: 100%;
+    padding-top: 0.15vw;
+    color: #757575;
+    font-size: 100%;
+}
+
+.search-holder {
+    display: flex;
+}
+
+.search {
+    margin-top: 0.5vw;
+    margin-left: 4vw;
+
+    height: 2.2vw;
+    width: 36vw;
+    opacity: 0.5;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px;
+    font-size: 1.5vw;
+    border: solid;
+    border-color: rgba(84, 7, 249, 1);
+    border-width: 0.15vw;
+    background-color: transparent;
+    outline: none;
+    padding-left: 0.5vw;
+}
+
+.search-button {
+    margin-top: 0.5vw;
+    margin-right: 4vw;
+
+    height: 2.2vw;
+    width: 2.2vw;
+    opacity: 0.5;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px;
+    font-size: 1.5vw;
+    border: solid;
+    border-color: rgba(84, 7, 249, 1);
+    border-width: 0.15vw;
+}
+
+.search-button:hover {
+    opacity: 1;
+}
+
+.search-button i {
+    margin: 0.35vw;
+    color: #757575;
+}
