@@ -18,11 +18,13 @@ var search_bar = document.getElementById("search_input");
 
 function select_all() {
 	document.getElementById('all').style.opacity = '1';
+	document.getElementById('all').style.borderColor = 'rgba(84, 7, 249, 1)';
 	active = 'all';
 
 	for (var i = 0; i < options.length; i++) {
 		if (options[i].id != 'all') {
 			options[i].style.opacity = 0.75;
+			options[i].style.borderColor = '#757575';
 		}
 	}
 
@@ -49,11 +51,13 @@ function select_all() {
 
 function select_projects() {
 	document.getElementById('projects').style.opacity = '1';
+	document.getElementById('projects').style.borderColor = 'rgba(84, 7, 249, 1)';
 	active = 'projects';
 
 	for (var i = 0; i < options.length; i++) {
 		if (options[i].id != 'projects') {
 			options[i].style.opacity = 0.75;
+			options[i].style.borderColor = '#757575';
 		}
 	}
 
@@ -80,11 +84,13 @@ function select_projects() {
 
 function select_repositories() {
 	document.getElementById('repositories').style.opacity = '1';
+	document.getElementById('repositories').style.borderColor = 'rgba(84, 7, 249, 1)';
 	active = 'repositories';
 
 	for (var i = 0; i < options.length; i++) {
 		if (options[i].id != 'repositories') {
 			options[i].style.opacity = 0.75;
+			options[i].style.borderColor = '#757575';
 		}
 	}
 
@@ -111,11 +117,13 @@ function select_repositories() {
 
 function select_games() {
 	document.getElementById('games').style.opacity = '1';
+	document.getElementById('games').style.borderColor = 'rgba(84, 7, 249, 1)';
 	active = 'games';
 
 	for (var i = 0; i < options.length; i++) {
 		if (options[i].id != 'games') {
 			options[i].style.opacity = 0.75;
+			options[i].style.borderColor = '#757575';
 		}
 	}
 
@@ -142,11 +150,13 @@ function select_games() {
 
 function select_publications() {
 	document.getElementById('publications').style.opacity = '1';
+	document.getElementById('publications').style.borderColor = 'rgba(84, 7, 249, 1)';
 	active = 'publications';
 
 	for (var i = 0; i < options.length; i++) {
 		if (options[i].id != 'publications') {
 			options[i].style.opacity = 0.75;
+			options[i].style.borderColor = '#757575';
 		}
 	}
 
@@ -176,6 +186,7 @@ function select_search() {
 
 	for (var i = 0; i < options.length; i++) {
 		options[i].style.opacity = 0.75;
+		options[i].style.borderColor = '#757575';
 	}
 
 	var input = document.getElementById("search_input").value.toLowerCase();

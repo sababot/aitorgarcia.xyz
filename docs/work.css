@@ -55,13 +55,13 @@
     padding: 0px;
     font-size: 1.5vw;
     border: solid;
-    border-color: rgba(84, 7, 249, 1);
+    border-color: #757575;
     border-width: 0.15vw;
 }
 
 .select-sections button:hover {
     opacity: 1;
-
+    border-color: rgba(84, 7, 249, 1);
 }
 
 .select-sections .box p {
@@ -87,7 +87,7 @@
     padding: 0px;
     font-size: 1.5vw;
     border: solid;
-    border-color: rgba(84, 7, 249, 1);
+    border-color: #757575;
     border-width: 0.15vw;
     background-color: transparent;
     outline: none;
