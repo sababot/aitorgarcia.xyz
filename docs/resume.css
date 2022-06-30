@@ -1,0 +1,24 @@
+.resume-button {
+	outline: none;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+
+    border: solid;
+    border-color: rgba(84, 7, 249, 1);
+    border-width: 2.5px;
+
+    padding: 10px;
+    display: block;
+    margin: 2vh auto;
+    margin-bottom: 46vh;
+}
+
+.resume-text {
+	color: #757575;
+	font-size: 20px;
+	text-align: center;
+    display: block;
+    margin-top: 30vh;
+}
