@@ -20,7 +20,11 @@
 <body>
 	<!--BACKGROUND-->
 	<canvas id="canvas" style="position: absolute; z-index: -10;"></canvas>
-	<div style="position: absolute; z-index: -9; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 70%, #1d1e22 100%);"></div>
+	<div style="position: absolute; z-index: 0; width: 100%; height: 100%;
+				background: -webkit-linear-gradient(to bottom, transparent 70%, #1d1e22 100%);
+				background: -moz-linear-gradient(to bottom, transparent 70%, #1d1e22 100%);
+				background: -o-linear-gradient(to bottom, transparent 70%, #1d1e22 100%);
+				background: linear-gradient(to bottom, transparent 70%, #1d1e22 100%);"></div>
 
 	<!--HEADER-->
 	<div class="header">
